@@ -15,5 +15,17 @@
   },
   "scripts": {
     "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "GWSAMPLE": {
+        "kind": "odata-v2",
+        "model": "srv/external/GWSAMPLE",
+        "credentials":{
+        "destination":"ES5",
+        "path":"/sap/opu/odata/IWBEP/GWSAMPLE_BASIC"
+        }
+      }
+    }
   }
 }
